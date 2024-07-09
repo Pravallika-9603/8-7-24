@@ -12,6 +12,8 @@ public class InsuranceForm {
     public void test(){
         InsuranceTemplate reethi=new InsuranceTemplate();
         Address address=new Address();
+        address.platNo="1-33";
+        address.area="kodad";
         reethi.name="Dhara Reethi";
         reethi.age=60;
         reethi.healthCondition="Not gud";

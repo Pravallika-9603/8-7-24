@@ -6,4 +6,5 @@ public class BankTemplate {
     public int adharNo;
     public Address address;
     public String married;
+    public int amount;
 }
