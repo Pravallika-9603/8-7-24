@@ -21,8 +21,10 @@ public class BankForm {
         kalyani.married="Married and having twins";
         BankService service=new BankService();
         AccountCreation acc=service.accountCreation(kalyani);
-        int balance=service.depositAmount(kalyani,acc);
-        System.out.println("balance"+balance);
+        if(acc!=null){
+            int balance = service.depositAmount(kalyani, acc);
+            System.out.println("balance" + balance);
+        }
         Assertions.assertNotNull(acc.acNo);
         Assertions.assertNotNull(acc);
     }
